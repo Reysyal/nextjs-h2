@@ -4,12 +4,16 @@ import Link from 'next/link'
 import styles from '@/styles/Home.module.css'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
+import Head from 'next/head'
 
 const Home = ({ data }) => {
   const { results: movies } = data;
 
   return (
     <div>
+      <Head>
+        <title>Moviewer</title>
+      </Head>
       <Header />
       <div className="container">
         <h1 className={styles.movieTitle}>Popular Movies</h1>
