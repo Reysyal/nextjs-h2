@@ -14,3 +14,61 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.main {
+  padding: 0 1em;
+}
+
+.btn {
+  display: inline-block;
+  padding: .4em 1em;
+  border: 1px solid crimson;
+  color: crimson;
+  border-radius: .2em;
+  font-weight: 600;
+}
+
+.btn:hover {
+  border: 2px solid crimson;
+}
+
+.header {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+}
+
+.header .logo {
+  display: flex;
+}
+
+.header h1 {
+  color: crimson;
+}
+
+.footer {
+  box-shadow: rgba(99, 99, 99, 0.2) -10px 0px 10px 0px;
+  margin-top: 1em;
+  padding: .2em 0;
+}
+
+.footer p {
+  color: crimson;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.main {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    width: 90%;
+  }
+}
